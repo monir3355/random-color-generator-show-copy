@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+}
+section {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-size: 30px;
+  margin: 20px 0;
+}
+input[type=text] {
+  width: 300px;
+  height: 30px;
+}
+.copy-btn {
+  height: 30px;
+  width: 70px; 
+  background-color: blueviolet;
+}
+.generate-btn {
+  height: 30px;
+  width: 130px; 
+  background-color: blueviolet;
+  margin: 16px 0;
+}
+
+.copy-text {
+  display: inline-block;
+  top: 2rem;
+  right: 2rem;
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0, 4px, 4px, 0 rgba(0, 0, 0, .5);
+  position: absolute;
+}
+
+.toast-msg-in {
+  animation: msg-in .5s ease-in;
+}
+.toast-msg-out {
+  animation: msg-out .5s ease-in;
+}
+
+@keyframes msg-in {
+  from{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes msg-out {
+  from{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
